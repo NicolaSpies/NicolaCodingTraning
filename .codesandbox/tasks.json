@@ -1,0 +1,45 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "name": "Install Dependencies",
+      "command": "yarn install"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "start": {
+      "name": "start",
+      "command": "yarn start",
+      "runAtStart": true
+    },
+    "build": {
+      "name": "build",
+      "command": "yarn build",
+      "runAtStart": false
+    },
+    "test": {
+      "name": "test",
+      "command": "yarn test",
+      "runAtStart": false
+    },
+    "eject": {
+      "name": "eject",
+      "command": "yarn eject",
+      "runAtStart": false
+    },
+    "./node_modules/.bin/eslint --init": {
+      "name": "./node_modules/.bin/eslint --init",
+      "command": "./node_modules/.bin/eslint --init"
+    },
+    "eslint --init": {
+      "name": "eslint --init",
+      "command": "eslint --init"
+    },
+    "yarn eslint --init": {
+      "name": "yarn eslint --init",
+      "command": "yarn eslint --init"
+    }
+  }
+}
